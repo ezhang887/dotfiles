@@ -1,0 +1,9 @@
+[user]
+	email = ezhang887@gmail.com
+	name = Eric Zhang
+
+[core]
+	editor = vim
+
+[credential]
+	helper = cache --timeout=3600
