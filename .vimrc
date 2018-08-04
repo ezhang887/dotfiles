@@ -33,9 +33,11 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+set pastetoggle=<F3>
+
+nnoremap <C-L> <C-W><C-L>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-nnoremap <silent> <C-l> :nohl<CR><C-l>
+nnoremap <silent> <C-C> :nohl<CR><C-C>
