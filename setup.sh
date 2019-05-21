@@ -43,8 +43,8 @@ install_deb () {
 
 echo "Updating packages........"
 sudo apt-get update &> /dev/null
-echo "Upgrading packages........"
-sudo apt-get full-upgrade &> dev/null
+#echo "Upgrading packages........"
+#sudo apt-get full-upgrade &> /dev/null
 
 install_apt "vim"
 install_apt "git"
