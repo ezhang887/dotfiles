@@ -25,17 +25,17 @@ install_deb () {
     wget -O $path "$1" &> /dev/null
     rv=$?
     if [ "$rv" = 0 ]; then
-        echo "[success] [setup.sh] hyper succesfully downloaded" >> $LOG_FILE
+        echo "[success] [setup.sh] $1 succesfully downloaded" >> $LOG_FILE
     else
-        echo "[error]   [setup.sh] hyper not downloaded!" >> $LOG_FILE
+        echo "[error]   [setup.sh] $1 not downloaded!" >> $LOG_FILE
     fi
     sudo dpkg -i $path &> /dev/null
     sudo apt-get install -f &> /dev/null
     rv=$?
     if [ "$rv" = 0 ]; then
-        echo "[success] [setup.sh] hyper succesfully installed" >> $LOG_FILE
+        echo "[success] [setup.sh] $1 succesfully installed" >> $LOG_FILE
     else
-        echo "[error]   [setup.sh] hyper not installed!" >> $LOG_FILE
+        echo "[error]   [setup.sh] $1 not installed!" >> $LOG_FILE
     fi
     rm $path
     echo "Finished $1 installation........"
