@@ -48,11 +48,13 @@ nnoremap <silent> <C-C> :nohl<CR><C-C>
 nnoremap <C-X> :qa<CR>
 
 autocmd FileType make setlocal noexpandtab
+autocmd Filetype cpp setlocal softtabstop=2 shiftwidth=2
+autocmd Filetype hpp setlocal softtabstop=2 shiftwidth=2
+autocmd Filetype h setlocal softtabstop=2 shiftwidth=2
+autocmd Filetype asm set wrap!
+
 execute pathogen#infect()
 call pathogen#helptags()
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 nmap <C-A> :ToggleNERDTreeAndTagbar<CR>
-colorscheme gruvbox
-autocmd BufNewFile,BufRead *.asm set filetype=nasm
-autocmd BufNewFile,BufRead *.s set filetype=nasm
