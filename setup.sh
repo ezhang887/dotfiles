@@ -42,7 +42,7 @@ install_deb () {
 }
 
 sudo apt-get update &> /dev/null
-#sudo apt-get update && sudo apt-get full-upgrade
+sudo apt-get full-upgrade &> dev/null
 install_apt "vim"
 install_apt "git"
 install_apt "curl"
