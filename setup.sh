@@ -41,8 +41,11 @@ install_deb () {
     echo "Finished $1 installation........"
 }
 
+echo "Updating packages........"
 sudo apt-get update &> /dev/null
+echo "Upgrading packages........"
 sudo apt-get full-upgrade &> dev/null
+
 install_apt "vim"
 install_apt "git"
 install_apt "curl"
@@ -54,5 +57,21 @@ install_apt "python3-pip"
 install_apt "vlc"
 install_apt "valgrind"
 install_apt "gdb"
+install_apt "zsh"
 
 install_deb "https://releases.hyper.is/download/deb"
+
+echo "Switching to zsh........"
+chsh -s /bin/zsh
+
+echo "Setting up pathogen........."
+mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+echo "Setting up vim packages........"
+git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar
+git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/youcompleteme
+git clone https://github.com/pseewald/nerdtree-tagbar-combined ~/.vim/bundle/nerdtree-tagbar-combined
+
+echo "Done!"
