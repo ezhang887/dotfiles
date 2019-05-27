@@ -65,6 +65,8 @@ plugins=(
     git
     ubuntu
     zsh-syntax-highlighting
+    zsh-autosuggestions
+    zsh-history-substring-search
 )
 
 
