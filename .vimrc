@@ -38,6 +38,8 @@ set pastetoggle=<F3>
 
 set splitright
 
+set belloff=all
+
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
