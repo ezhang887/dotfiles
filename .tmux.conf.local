@@ -6,16 +6,6 @@
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
 
 
-# -- navigation ----------------------------------------------------------------
-
-# if you're running tmux within iTerm2
-#   - and tmux is 1.9 or 1.9a
-#   - and iTerm2 is configured to let option key act as +Esc
-#   - and iTerm2 is configured to send [1;9A -> [1;9D for option + arrow keys
-# then uncomment the following line to make Meta + arrow keys mapping work
-#set -ga terminal-overrides "*:kUP3=\e[1;9A,*:kDN3=\e[1;9B,*:kRIT3=\e[1;9C,*:kLFT3=\e[1;9D"
-
-
 # -- windows & pane creation ---------------------------------------------------
 
 # new window retains current path, possible values are:
@@ -250,9 +240,9 @@ tmux_conf_battery_vbar_palette='gradient'
 #tmux_conf_battery_vbar_palette='#d70000,#ff5f00,#5fff00'  # red, orange, green
 
 # symbols used to indicate whether battery is charging or discharging
-tmux_conf_battery_status_charging='↑'       # U+2191
-tmux_conf_battery_status_discharging='↓'    # U+2193
-#tmux_conf_battery_status_charging='⚡ '    # U+26A1
+#tmux_conf_battery_status_charging='↑'       # U+2191
+#tmux_conf_battery_status_discharging='↓'    # U+2193
+tmux_conf_battery_status_charging='⚡ '    # U+26A1
 #tmux_conf_battery_status_charging='🔌 '    # U+1F50C
 #tmux_conf_battery_status_discharging='🔋 ' # U+1F50B
 
@@ -295,3 +285,8 @@ set -g mode-keys vi
 
 # move status line to top
 #set -g status-position top
+
+set -g repeat-time 125
+
+# unbind creating new sessions
+unbind C-c
