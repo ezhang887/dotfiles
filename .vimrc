@@ -50,6 +50,7 @@ nnoremap <silent> <C-C> :nohl<CR><C-C>
 nnoremap <C-X> :qa<CR>
 
 autocmd FileType make setlocal noexpandtab
+autocmd Filetype go setlocal noexpandtab
 autocmd Filetype cpp setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype hpp setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype h setlocal softtabstop=2 shiftwidth=2
