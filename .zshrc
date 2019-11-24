@@ -9,15 +9,11 @@ plugins=(
     zsh-history-substring-search
 )
 
-# old powerlevel9k theme configs
-# source ~/.fonts/*.sh
-# POWERLEVEL9K_MODE='awesome-fontconfig'
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs)
-# POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes)
-
 # pure zsh theme
 ZSH_THEME=""
 source $ZSH/oh-my-zsh.sh
+
+fpath+=("$HOME/.zsh/pure")
 autoload -U promptinit; promptinit
 prompt pure
 
