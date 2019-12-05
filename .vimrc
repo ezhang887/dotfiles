@@ -61,3 +61,5 @@ call pathogen#helptags()
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 nmap <C-A> :ToggleNERDTreeAndTagbar<CR>
+
+let vim_markdown_preview_github=1
