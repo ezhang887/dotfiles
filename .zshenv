@@ -21,5 +21,3 @@ source /opt/ros/melodic/setup.zsh
 
 # editor
 export EDITOR='vim'
-
-#export GOOGLE_APPLICATION_CREDENTIALS='/home/ezhang/SBHacks/HandsfreeTV/hacksb-ad66c048907e.json'
