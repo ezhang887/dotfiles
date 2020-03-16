@@ -54,6 +54,7 @@ autocmd Filetype go setlocal noexpandtab
 autocmd Filetype cpp setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype hpp setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype h setlocal softtabstop=2 shiftwidth=2
+autocmd Filetype javascript setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype asm set wrap!
 
 execute pathogen#infect()
