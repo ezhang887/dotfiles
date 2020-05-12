@@ -12,10 +12,6 @@ export PATH=$PATH:$(go env GOPATH)/bin
 # cargo (rust)
 export PATH="$HOME/.cargo/bin:$PATH"
 
-## cuda (nvcc)
-export PATH=/usr/lib/cuda-10.1/bin${PATH:+:${PATH}}$
-export LD_LIBRARY_PATH=/usr/lo/ilibcuda-10.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-
 # ros
 source /opt/ros/melodic/setup.zsh
 
