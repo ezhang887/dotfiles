@@ -7,7 +7,7 @@ Host grd-01
 	User ericsz2
 
 Host grd-02
-	HostName sp20-cs241-grd-01.cs.illinois.edu
+	HostName sp20-cs241-grd-02.cs.illinois.edu
 	User ericsz2
 
 Host EWS
