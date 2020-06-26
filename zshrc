@@ -23,3 +23,5 @@ tmux attach &> /dev/null
 if [[ ! $TERM =~ screen ]]; then
     exec tmux
 fi
+
+export VM=ericsz2@sp20-cs241-414.cs.illinois.edu
