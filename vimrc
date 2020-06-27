@@ -56,11 +56,3 @@ autocmd Filetype hpp setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype h setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype javascript setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype asm set wrap!
-
-execute pathogen#infect()
-call pathogen#helptags()
-
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-nmap <C-A> :ToggleNERDTreeAndTagbar<CR>
-
-let vim_markdown_preview_github=1
