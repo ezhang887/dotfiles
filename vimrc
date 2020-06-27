@@ -1,16 +1,12 @@
-" Required for Vundle
-set nocompatible
-filetype off
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
 
-" Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-" Vundle plugins start here
-call vundle#begin()
+call plug#end()
 
-" Vundle plugins end here
-call vundle#end()
-" Required for Vundle
 filetype plugin indent on
 
 command W w !sudo tee % > /dev/null
@@ -36,8 +32,6 @@ set wrap
 set visualbell
 
 set mouse=a
-
-set cmdheight=2
 
 set number
 
@@ -67,3 +61,11 @@ autocmd Filetype hpp setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype h setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype javascript setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype asm set wrap!
+
+
+" coc.nvim - tab completion
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" airline theme
+let g:airline_theme='badwolf'
