@@ -1,6 +1,17 @@
+" Required for Vundle
 set nocompatible
+filetype off
 
-filetype indent plugin on
+" Set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
+" Vundle plugins start here
+call vundle#begin()
+
+" Vundle plugins end here
+call vundle#end()
+" Required for Vundle
+filetype plugin indent on
 
 command W w !sudo tee % > /dev/null
  
