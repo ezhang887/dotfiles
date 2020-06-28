@@ -2,8 +2,8 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+Plug 'drewtempelmeyer/palenight.vim'
 
 call plug#end()
 
@@ -12,7 +12,6 @@ filetype plugin indent on
 command W w !sudo tee % > /dev/null
  
 syntax enable
-set background=dark
 
 set hidden
 
@@ -67,5 +66,23 @@ autocmd Filetype asm set wrap!
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" airline theme
-let g:airline_theme='badwolf'
+" lightline theme
+set laststatus=2
+let g:lightline = {
+  \     'colorscheme': 'palenight',
+  \     'active': {
+  \         'left': [['mode', 'paste' ], ['readonly', 'filename', 'modified']],
+  \         'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding']]
+  \     }
+  \ }
+set noshowmode
+
+" palenight color scheme
+set background=dark
+colorscheme palenight
+" Enable true colors: https://github.com/alacritty/alacritty/issues/109#issuecomment-440353106
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif

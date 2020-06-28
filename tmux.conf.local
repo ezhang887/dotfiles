@@ -290,3 +290,7 @@ set -g repeat-time 125
 
 # unbind creating new sessions
 unbind C-c
+
+# Enable true colors - see https://github.com/alacritty/alacritty/issues/109#issuecomment-440353106
+set -g default-terminal 'screen-256color'
+set -ga terminal-overrides ',*256col*:Tc'
