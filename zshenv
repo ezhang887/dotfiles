@@ -13,7 +13,9 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # ros
-source /opt/ros/melodic/setup.zsh
+if [ -d "/opt/ros/melodic" ]; then
+    source /opt/ros/melodic/setup.zsh
+fi
 
 # editor
 export EDITOR='vim'

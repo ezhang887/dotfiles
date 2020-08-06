@@ -16,10 +16,3 @@ source $ZSH/oh-my-zsh.sh
 fpath+=("$HOME/.zsh/pure")
 autoload -U promptinit; promptinit
 prompt pure
-
-# start tmux
-tmux attach &> /dev/null
-
-if [[ ! $TERM =~ screen ]]; then
-    exec tmux
-fi
