@@ -31,3 +31,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# Make background color work in vim in tmux
+alias tmux='tmux -2'
