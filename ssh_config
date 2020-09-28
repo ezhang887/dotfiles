@@ -6,6 +6,10 @@ Host grd-*
 	HostName fa20-cs241-%h.cs.illinois.edu
 	User ericsz2
 
+Host g51-*
+        HostName fa20-cs425-%h.cs.illinois.edu
+        User ericsz2
+
 Host EWS
 	HostName linux.ews.illinois.edu
 	User ericsz2

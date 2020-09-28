@@ -297,3 +297,5 @@ set -ga terminal-overrides ',*256col*:Tc'
 
 # Set default shell to zsh
 set-option -g default-shell /bin/zsh
+
+bind -n C-a setw synchronize-panes
