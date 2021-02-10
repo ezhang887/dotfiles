@@ -1,13 +1,13 @@
 Host 241
-	HostName fa20-cs241-adm.cs.illinois.edu
+	HostName sp21-cs241-adm.cs.illinois.edu
 	User ericsz2
 
 Host grd-*
 	HostName fa20-cs241-%h.cs.illinois.edu
 	User ericsz2
 
-Host g51-*
-        HostName fa20-cs425-%h.cs.illinois.edu
+Host 423
+        HostName sp21-cs423-97.cs.illinois.edu
         User ericsz2
 
 Host EWS
