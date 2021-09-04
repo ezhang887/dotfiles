@@ -1,9 +1,9 @@
 Host 241
-	HostName sp21-cs241-adm.cs.illinois.edu
+	HostName fa21-cs241-adm.cs.illinois.edu
 	User ericsz2
 
 Host grd-*
-	HostName fa20-cs241-%h.cs.illinois.edu
+	HostName fa21-cs241-%h.cs.illinois.edu
 	User ericsz2
 
 Host 423

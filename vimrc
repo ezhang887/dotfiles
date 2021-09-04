@@ -60,6 +60,7 @@ autocmd Filetype go setlocal noexpandtab
 autocmd Filetype cpp setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype hpp setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype javascript setlocal softtabstop=2 shiftwidth=2
+autocmd Filetype typescript setlocal softtabstop=2 shiftwidth=2
 
 " Show vertical bar at column limits
 set colorcolumn=80
