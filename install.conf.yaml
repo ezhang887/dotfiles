@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.zshenv: zshenv
+    ~/.gitconfig: gitconfig
+    ~/.alacritty.yml: alacritty.yml
