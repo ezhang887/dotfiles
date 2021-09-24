@@ -56,8 +56,8 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <silent> <C-C> :nohl<CR><C-C>
 
 " Custom tabbing for specific tiletypes
-autocmd FileType make setlocal noexpandtab
-autocmd Filetype go setlocal noexpandtab
+autocmd FileType make setlocal tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
+autocmd Filetype go setlocal tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
 autocmd Filetype cpp setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype hpp setlocal softtabstop=2 shiftwidth=2
 autocmd Filetype javascript setlocal softtabstop=2 shiftwidth=2
