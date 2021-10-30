@@ -6,14 +6,10 @@ Host grd-*
 	HostName fa21-cs241-%h.cs.illinois.edu
 	User ericsz2
 
-Host 423
-        HostName sp21-cs423-97.cs.illinois.edu
-        User ericsz2
-
 Host EWS
 	HostName linux.ews.illinois.edu
 	User ericsz2
 
-Host Nick
-	HostName 76.102.32.201
-	User eric
+Host 461
+	HostName 172.16.236.128
+	User student
