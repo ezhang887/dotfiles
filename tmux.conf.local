@@ -296,6 +296,6 @@ set -g default-terminal 'screen-256color'
 set -ga terminal-overrides ',*256col*:Tc'
 
 # Set default shell to zsh
-set-option -g default-shell /bin/zsh
+set-option -g default-shell /usr/local/bin/zsh
 
 bind -n C-a setw synchronize-panes

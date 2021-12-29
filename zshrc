@@ -4,6 +4,7 @@
 plugins=(
     git
     ubuntu
+    fzf-tab
     zsh-syntax-highlighting
     zsh-autosuggestions
     zsh-history-substring-search
@@ -34,3 +35,21 @@ unset __conda_setup
 
 # Make background color work in vim in tmux
 alias tmux='tmux -2'
+
+# Replace `ls` with `exa`
+# https://github.com/ogham/exa
+alias ls='exa'
+
+# Replace `cat` with `bat`
+# https://github.com/sharkdp/bat
+alias cat='bat --color=always --style="numbers,header,grid"'
+
+# fzf
+alias fzf='fzf --height 40% --layout=reverse --border --preview "bat --color=always --style=numbers --line-range=:100 {}"'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# For fzf-tab
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# preview directory's content with exa when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'

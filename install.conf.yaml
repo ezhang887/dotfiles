@@ -11,3 +11,4 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.alacritty.yml: alacritty.yml
+    ~/.fzf.zsh: fzf.zsh
