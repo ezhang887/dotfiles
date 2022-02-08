@@ -42,7 +42,7 @@ alias ls='exa'
 
 # Replace `cat` with `bat`
 # https://github.com/sharkdp/bat
-alias cat='bat --color=always --style="numbers,header,grid"'
+alias cat='bat --color=always --style="header,grid"'
 
 # fzf
 alias fzf='fzf --height 40% --layout=reverse --border --preview "bat --color=always --style=numbers --line-range=:100 {}"'

@@ -9,7 +9,3 @@ Host grd-*
 Host EWS
 	HostName linux.ews.illinois.edu
 	User ericsz2
-
-Host 461
-	HostName 172.16.236.128
-	User student
