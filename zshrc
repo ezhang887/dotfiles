@@ -53,3 +53,13 @@ alias fzf='fzf --height 40% --layout=reverse --border --preview "bat --color=alw
 zstyle ':completion:*:git-checkout:*' sort false
 # preview directory's content with exa when completing cd
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+
+# Copy file contents
+function cpf() {
+    if [ -n "$1" ]
+    then
+        /bin/cat $1 | clipboard
+    else
+        echo "Please specify file to copy."
+    fi
+}
