@@ -11,6 +11,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 # cargo (rust)
 export PATH="$HOME/.cargo/bin:$PATH"
+. "$HOME/.cargo/env"
 
 # ros
 if [ -d "/opt/ros/melodic" ]; then
