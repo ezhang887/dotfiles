@@ -6,9 +6,16 @@
 
 - link:
     ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+      force: true
+      path: zshrc
     ~/.zshenv: zshenv
-    ~/.gitconfig: gitconfig
+    ~/.gitconfig:
+      force: true
+      path: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.alacritty.yml: alacritty.yml
     ~/.fzf.zsh: fzf.zsh
+    ~/.tmux/.tmux.conf.local:
+      force: true
+      path: tmux.conf.local

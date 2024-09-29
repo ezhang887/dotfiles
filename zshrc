@@ -36,9 +36,9 @@ unset __conda_setup
 # Make background color work in vim in tmux
 alias tmux='tmux -2'
 
-# Replace `ls` with `exa`
-# https://github.com/ogham/exa
-alias ls='exa'
+# Replace `ls` with `eza`
+# https://github.com/eza-community/eza
+alias ls='eza'
 
 # Replace `cat` with `bat`
 # https://github.com/sharkdp/bat

@@ -10,3 +10,5 @@ Setup:
 
 Other things that are not automated:
 - Install [vim-plug](https://github.com/junegunn/vim-plug)
+- Install [.tmux](https://github.com/gpakosz/.tmux)
+- Install [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) + the associated plugins (look in `zshrc`)
