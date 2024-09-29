@@ -17,6 +17,6 @@
     # ~/.alacritty.yml: alacritty.yml
     ~/.alacritty.toml: alacritty.toml
     ~/.fzf.zsh: fzf.zsh
-    ~/.tmux/.tmux.conf.local:
+    ~/.tmux.conf.local:
       force: true
       path: tmux.conf.local
