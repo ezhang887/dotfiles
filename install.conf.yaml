@@ -14,7 +14,8 @@
       force: true
       path: gitconfig
     ~/.gitignore_global: gitignore_global
-    ~/.alacritty.yml: alacritty.yml
+    # ~/.alacritty.yml: alacritty.yml
+    ~/.alacritty.toml: alacritty.toml
     ~/.fzf.zsh: fzf.zsh
     ~/.tmux/.tmux.conf.local:
       force: true
